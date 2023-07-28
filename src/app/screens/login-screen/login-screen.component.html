@@ -1,0 +1,42 @@
+<div fxLayoutAlign="center center" style="height: 100%; background-color: rgb(33, 36, 36);">
+    <mat-card class="card">
+        <form (submit)="login(new)" #new="ngForm">
+            <div fxLayout="column">
+                <div fxLayoutAlign="center center" style="margin-top: 3%; margin-bottom: 5%;">
+                    <span style="font-size: 2vw; font-weight:200; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Login</span>
+                </div>
+                <div fxLayout="row">
+                    <div class="middle1" fxLayoutAlign="start center">
+                        <mat-icon matPrefix style="color: rgb(6, 120, 130);">person</mat-icon>
+                    </div>
+                    <div class="middle2" fxLayoutAlign="start center">
+                        <mat-form-field style="width: 20vw;">
+                            <input width="100%" matInput  name="name" ngModel #name="ngModel" type="text" placeholder="Enter Name" required>
+                            <!-- <mat-error *ngIf="name.invalid">Enter Name</mat-error> -->
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div fxLayout="row">
+                    <div class="middle1" fxLayoutAlign="start center">
+                        <mat-icon matPrefix style="color: rgb(6, 120, 130);">lock</mat-icon>
+                    </div>
+                    <div class="middle2" fxLayoutAlign="start center">
+                        <mat-form-field style="width: 20vw;">
+                            <input width="100%" matInput name="password" ngModel #password="ngModel" type="password" placeholder="Enter Password" required>
+                            <!-- <mat-error *ngIf="password.invalid">Enter Password</mat-error> -->
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div  fxLayoutAlign="end center" style="margin-right: 5%; margin-bottom: 7%;">
+                    <a [routerLink]="['/']">Forgot password?</a>
+                </div>
+                <div fxLayoutAlign="center center">
+                    <button mat-raised-button class="login" type="submit" style="width: 90%; height: 6vh; font-size: 1.3vw;">LOG IN</button>
+                </div>
+                <div  fxLayoutAlign="center center" style="margin-right: 5%; margin-bottom: 4%; margin-top: 8%;">
+                    <a [routerLink]="['/']">Dont have an account?</a>
+                </div>
+            </div>
+        </form>
+    </mat-card>
+</div>

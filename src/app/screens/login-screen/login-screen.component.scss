@@ -1,0 +1,30 @@
+.middle1{
+    // width: 40%;
+    margin-right: 1%;
+}
+// .middle2{
+//     // width: 60%;
+// }
+
+.login{
+    background-image: linear-gradient(to right, #0779aa 0%, #043161  51%, #0787aa  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 5px #eee;
+    border-radius: 5px;
+    display: block;
+}
+
+.login:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.card{
+    width: 22vw;
+    height: 45vh;
+}
